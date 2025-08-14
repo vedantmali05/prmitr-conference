@@ -8,6 +8,9 @@ import Footer from "./components/Footer"
 import Credits from "./components/Credits"
 import Reviewer from "./components/Reviewer"
 import Tracks from "./Tracks" 
+import AboutConference from "./components/AboutConference"
+import Timeline from "./components/Timeline"
+import Patrons from "./components/Patrons"
 
 function App() {
 
@@ -23,6 +26,8 @@ function App() {
       <Acknowledgment />
       <Footer />
       <Credits />
+      <AboutConference />
+      <Patrons />
     </>
   )
 }

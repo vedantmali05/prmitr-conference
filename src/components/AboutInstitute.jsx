@@ -2,7 +2,6 @@ import React from 'react';
 
 // JSON data for the component's content
 const instituteData = {
-    date: 'Nov 19, 2021',
     mainHeader: "How to Create a Successful Environment Using Our College's Resources",
     imageUrl: "/src/assets/placeholder-image.jpg",
     imageAlt: "Students collaborating in a college setting",
@@ -49,17 +48,6 @@ const AboutInstitute = () => {
                 {/* Main grid for the two-column layout */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-16 xl:gap-x-24">
 
-                    {/* Left Column: Sticky Image */}
-                    <div className="relative lg:h-full">
-                        <div className="lg:sticky lg:top-14 py-4">
-                            <img
-                                className="rounded-lg object-cover w-full h-full shadow-lg"
-                                src={instituteData.imageUrl}
-                                alt={instituteData.imageAlt}
-                            />
-                        </div>
-                    </div>
-
                     {/* Right Column: Scrollable Content Rendered from JSON */}
                     <div className="prose prose-lg max-w-none mt-8 lg:mt-0">
                         <p className="text-sm text-gray-500">{instituteData.date}</p>
@@ -91,6 +79,18 @@ const AboutInstitute = () => {
                             }
                             return null;
                         })}
+                    </div>
+
+
+                    {/* Left Column: Sticky Image */}
+                    <div className="relative lg:h-full">
+                        <div className="lg:sticky lg:top-14 py-4">
+                            <img
+                                className="rounded-lg object-cover w-full h-full shadow-lg"
+                                src={instituteData.imageUrl}
+                                alt={instituteData.imageAlt}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
