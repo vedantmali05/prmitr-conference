@@ -7,10 +7,13 @@ import Acknowledgment from "./components/Acknowledgement"
 import Footer from "./components/Footer"
 import Credits from "./components/Credits"
 import Reviewer from "./components/Reviewer"
-import Tracks from "./components/Tracks" 
+import Tracks from "./components/Tracks"
 import AboutConference from "./components/AboutConference"
 import Timeline from "./components/Timeline"
 import Patrons from "./components/Patrons"
+import PlacesNearAmravati from "./components/PlacesNearAmravati"
+import Speaker from "./components/Speaker"
+import Committees from "./components/Committees"
 
 function App() {
 
@@ -21,13 +24,16 @@ function App() {
       <Hero />
       <DatesTile />
       <AboutInstitute />
+      <AboutConference />
+      <Patrons />
+      <Speaker />
+      <Committees />
+      <PlacesNearAmravati />
       <Tracks />
-      <Reviewer/>
+      <Reviewer />
       <Acknowledgment />
       <Footer />
       <Credits />
-      <AboutConference />
-      <Patrons />
     </>
   )
 }
