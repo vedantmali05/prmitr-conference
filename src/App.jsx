@@ -9,8 +9,10 @@ import Credits from "./components/Credits"
 import Reviewer from "./components/Reviewer"
 import Tracks from "./components/Tracks" 
 import AboutConference from "./components/AboutConference"
-import Timeline from "./components/Timeline"
 import Patrons from "./components/Patrons"
+import Submission from "./components/Submission"
+import FeesStructure from "./components/FeesStructure"
+import BankDetails from "./components/BankDetails"
 
 function App() {
 
@@ -21,13 +23,16 @@ function App() {
       <Hero />
       <DatesTile />
       <AboutInstitute />
+      <AboutConference />
+      <Patrons />
+      <FeesStructure />
+      <BankDetails />
+      <Submission />
       <Tracks />
       <Reviewer/>
       <Acknowledgment />
       <Footer />
       <Credits />
-      <AboutConference />
-      <Patrons />
     </>
   )
 }
